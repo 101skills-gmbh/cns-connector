@@ -12,7 +12,6 @@ COPY src src
 
 RUN npm install -g npm-run-all typescript
 RUN npm run build
-RUN .ci/writeBuildInformation.sh
 
 FROM node:16.13.0-alpine
 ENV NODE_CONFIG_ENV=prod
